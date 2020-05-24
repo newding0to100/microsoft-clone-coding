@@ -1,0 +1,33 @@
+
+.main {
+    text-align: center;
+}
+
+.main-slideshow-1{
+    background-color: #3B3E62;
+}
+
+.slideshow-contents-title{
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.slideshow-contents-subtitle{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.show-detail-btn {
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}

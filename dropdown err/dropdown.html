@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="main-contents.css">
-    <title>Microsoft 공식 홈페이지</title>
+    <link rel="stylesheet" href="dropdown-ex.css">
+    <title>test dropdown menu</title>
 </head>
 
 <body class="wrapper">
@@ -25,12 +26,43 @@
         </div>
         <div class="공백"></div>
 
+
+
+
         <div class="nav-right">
 
-            <div id="all-dropdown-wrapper" class="all-dropdown-wrapper-class">
+
+
+
+            <div class="all-dropdown-wrapper-class">
                 <button class="all-dropdown-btn nav-right-item" onclick="allDropdown()">
                     Microsoft 전체 &#5167;
                 </button>
+                <ul id="all-dropdown-wrapper" class="dropdown-list-group" style="list-style:none">
+                    <li>
+                        <ul class="dropdown-parents-ul">
+                            <button class="dropdown-child-btn">소프트웨어</button>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">Windows 앱</a>
+                            </li>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">OneDirve</a>
+                            </li>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">Outlook</a>
+                            </li>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">Skype</a>
+                            </li>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">OneNote</a>
+                            </li>
+                            <li class="dropdown-child-list">
+                                <a href="http://www.microsoft.com">Microsoft Teams</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
 
@@ -53,30 +85,5 @@
             </a>
         </div>
     </div>
-
-    <div class="main">
-
-        <div class="main-slideshow-1">
-            <div class="slideshow-contents">
-                <div class="slideshow-contents-img">
-                    <img src="./img/slideshow-1-upgrade.PNG" style="width: 100%;">
-                </div>
-                <div class="slideshow-contents-title">
-                    Microsoft Teams - 안전합니다.<br>
-                    견고합니다. 무료입니다.
-                </div>
-                <div class="slideshow-contents-subtitle">
-                    Teams는 어디서나 생산성을 유지할 수 있도록 도와줍니다.
-                </div>
-                <div style="margin-top: 40px; padding-bottom: 40px;">
-                    <a class="show-detail-btn" href="http://www.microsoft.com">
-                        <span>자세히 보기></spa>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="dropdown.js"></script>
-</body>
-
+<script src="dropdown.js"></script>
 </html>
