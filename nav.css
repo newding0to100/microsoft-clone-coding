@@ -36,8 +36,30 @@
 
 .all-dropdown-btn {
     border: none;
-    /*background-color: #fff; 버튼 만들고 나서 주석처리 해제할 것*/
+    background-color: #fff;
     cursor: pointer;
+}
+
+.all-dropdown-btn:focus {
+    background-color: #bfbfbf;
+}
+
+.all-dropdown-contents {
+    position: absolute;
+    background-color: #bfbfbf;
+    list-style: none;
+    z-index: 1;
+    display: none;
+}
+
+.all-dropdown-contents a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px
+}
+
+.all-dropdown-contents a:hover{
+    border-bottom: 1px solid black;
 }
 
 .nav-right-item {
@@ -49,4 +71,8 @@
 
 .nav-right-item:hover {
     border-bottom: 2px solid black;
+}
+
+.show {
+    display: block;
 }
