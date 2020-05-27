@@ -26,6 +26,7 @@
     border-bottom: 2px solid black;
 }
 
+
 .nav-right {
     line-height: 50px;
 }
@@ -51,7 +52,7 @@
     z-index: 1;
     display: none;
     margin: 0;
-    top:44px
+    top:60px
 }
 
 .all-dropdown-contents li a{
