@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <style>
+        .menu-link {
+            background-color: dodgerblue;
+            padding: 3rem;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .menu-active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <a class="menu-link" href="#">menu1</a>
+        <a class="menu-link" href="#">menu2</a>
+        <a class="menu-link" href="#">menu3</a>
+    </nav>
+    <script>
+        /*
+
+        이 방법은 단점이 하나만 활성화 해야 하는데 for문을 다 돌아야 한다. 즉 for문이 길어질 경우 자원 소모 효율이 안좋다.
+
+        var menuList = document.querySelectorAll('.menu-link')
+        function clickMenuHandler(){
+            for(let i=0;i<menuList.length;i++){
+                menuList[i].classList.remove('menu-active')
+            }
+            this.classList.add('menu-active')//여기서 this는 addEventListener를 호출한 menuList[i]가 된다. 
+        }
+        */
+
+        var menuList = document.querySelectorAll('.menu-link')
+        function clickMenuHandler() {
+            var activeMenu = docuument.querySelector('.menu-active')
+            if (activeMenu) {
+                activeMenu.classList.remove('menu-active')
+                this.classList.add('menu-active')//여기서 this는 addEventListener를 호출한 menuList[i]가 된다. 
+            }
+        }
+        for (let i = 0; i < menuList.length; i++) {
+            menuList[i].addEventListener('click', clickMenuHandler)
+        }
+
+
+    </script>
+</body>
+
+</html>

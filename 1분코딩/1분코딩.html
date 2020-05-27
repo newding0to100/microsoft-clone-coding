@@ -1,26 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1min coding</title>
+<style>
+    
+</style>
 </head>
 
 <body>
-    <h3 id="main-title">Dom scritp는 간단히 html을 JS로 조작하는 것을 말한다.</h>
-        <ul>
-            <li><img src="../img/logo.PNG" alt="MS logo"></li>
-            <li><img src="../img/logo.PNG" alt="MS logo"></li>
-            <li><img src="../img/logo.PNG" alt="MS logo"></li>
-        </ul>
+    <a href="http://www.google.com">Google</a>
+    <ul class="ctrl-li">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ul>
+<script>
+    var ctrl = document.querySelector('.ctrl-li')
+    var listElem = document.createElement('li');
+    listElem.innerHTML = '<span>wonyoung kang</span>'
+    ctrl.appendChild(listElem)
+
+    //createElement method는 element를 만든다. 만든 후 innerHTML를 해서 html을 넣고
+    //부모 선택자에 appendChilde method를 사용해 html에 적용한다. 여기서 append의 뜻은 덧붙이다, 첨부하다의 뜻이 있다.
+
     
-    <script>
-         var title = document.getElementById('main-title')
-         var titleSpan = title.getElementsByTagName('span')
-         console.log(titleSpan[0])
-        title.getAttribute('string')//Attribute 속성 가져오기
-    </script>
+</script>
 </body>
 
 </html>

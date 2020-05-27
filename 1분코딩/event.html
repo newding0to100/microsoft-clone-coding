@@ -1,0 +1,29 @@
+<head>
+<style>
+    h1{
+        background-color: yellow;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+</style>
+</head>
+<body>
+    <h1>I'll be god of coding</h1>
+    <button class="btn">click me!!!!!</button>
+    <script>
+        var button = document.querySelector('.btn')
+        var mainTitle =document.querySelector('h1')
+        function btnClickHandler() {
+            mainTitle.style.backgroundColor= 'dodgerblue';
+        }
+        button.onclick = btnClickHandler;//속성이기 때문에 여러개를 작성할 경우 덮어쓴다. 즉 함수를 하나밖에 못넌다.
+        button.addEventListener('click',btnClickHandler)//여러개를 넣ㅇ르 수 있다.
+        button.addEventListener('click',btnClickHandler)
+        button.addEventListener('click',btnClickHandler)
+    </script>
+</body>
