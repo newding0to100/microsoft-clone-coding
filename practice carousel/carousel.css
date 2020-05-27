@@ -1,24 +1,87 @@
-* {
-    box-sizing: border-box;
-}
-
-.slideshow {
-    padding: 0 50px;
-    text-align: center;/*text-align은 text만 되는 것이 아니였는가?!*/
-}
-
-.prev, .next {
-    cursor: pointer;
+*{box-sizing: border-box;}
+a{text-decoration: none;}
+.slide-contents-1 {
+    width: 100%;
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    left: 50px;
+    right: 50px;
+    background-color: #3E4166 ;
+    text-align: center;
+    padding: 50px;
+    line-height: 50px;
+}
+
+.main-title {
+    font-size: 40px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+}
 
+.sub-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.slide-contents-1 button {
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+
+}
+
+.slide-contents-2 {
+    width: 100%;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    background-color: #EAEAEA ;
+    text-align: center;
+    padding: 50px;
+    line-height: 50px;
+}
+
+.slide-contents-2 a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.slide-contents-2 div{
+    display: table;
+}
+
+.main-title-2 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+.sub-title-2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.slide-contents-2 a div button:nth-child(3) {
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.slide-contents-2 a div button:last-child {
+
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    background-color: #EAEAEA ;
+    color: black;
+    border: none;
 }
