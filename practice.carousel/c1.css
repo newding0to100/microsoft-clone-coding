@@ -1,0 +1,83 @@
+* {box-sizing: border-box;}
+
+/*slideshow-comtainers*/
+
+.slideshow-container {
+    max-width: 1600px;/*완성 후 일반 width랑 차이점 연구할 것*/
+    height: 400px;/*최대로 500까지 밖에 못큼. 안에 컨텐츠가 더 커도*/
+    position: relative;
+    margin:auto;
+    background-color: #3D4064;
+    text-align: center;
+}
+
+.slide-contents {
+    display: none;
+}
+
+.slide-contents-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #E8E8E8;
+}
+.prev, .next {
+    cursor: pointer;
+    position:absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s
+}
+
+@-webkit-keyframes fade{
+    0%{opacity: .4;}
+    100%{opacity: 1;}
+}
+
+
+
+@keyframes fade {
+    0%{opacity: .4;}
+    100%{opacity: 1;}
+}
