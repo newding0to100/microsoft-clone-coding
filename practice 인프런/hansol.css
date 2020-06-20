@@ -1,6 +1,0 @@
-header {text-align: center;}/*나머지는 absolute로 절대값을 지정해놔서 이친구만 움직인다.*/
-header h1 {position: absolute; top: 0; left:0;}
-header h1 a {display: inline-block; width: 110px; height: 81px;}
-header .nav-1 li {display: inline-block; padding: 0 15px;}
-header .nav-2 {position: absolute; top:0; right: 50px;}
-
