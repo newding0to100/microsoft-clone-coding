@@ -1,0 +1,207 @@
+ul,ol {list-style-type: none; padding-left: 0;}
+body {margin: 0; padding:0;}
+a{text-decoration: none; color: black;}
+/* header header header header header  */
+header {
+    box-shadow: 1px 5px 3px #ccc;
+    padding: 8px 12px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header-container {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header .left {
+    display: flex;
+
+}
+
+header .left img {
+    margin-right: 10px;
+}
+
+header .left .title {
+    display: flex;
+    flex-direction: column;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right button {
+    all:unset;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-bottom: 1px solid black;
+}
+
+header .right a {
+    background-color: #E0001B;
+    color: #FDFFDA;
+    text-align: center;
+    border: 1px solid #FDFFDA;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.2rem;
+}
+/* nav nav nav nav nav nav nav nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0 12px;
+}
+
+.nav-container {
+    min-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+.left a {
+    width: 137px;
+    padding:0.5rem 0.8rem;
+    margin-right: 0;
+}
+
+.left a img {
+    width: 100%;
+}
+
+nav .left .leftNav {
+    display: flex;
+}
+
+nav .left .leftNav li {
+    margin-right: 1rem
+}
+
+nav .left .leftNav li a:hover {
+    border-bottom: 2px solid black;
+}
+
+nav .right ul{
+    display: flex;
+}
+
+nav .right li {
+    margin-left: 2rem;
+}
+
+nav .right li a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* main & slideshow */
+.main {
+    text-align: center;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main .slideContent {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: none;
+}
+
+.main .slideContent .explain {
+    width: 50%;
+    max-width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+.main .slideContent .explain h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.main .slideContent .explain h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.main .slideContent .explain p {
+    margin-bottom: 1.5rem;
+}
+
+.main .slideContent .explain a {
+    display: inline-block;
+    background: #000000 ;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.prev {
+    position: absolute;
+    top: 44%;
+    left: 0;
+    color: #404040;
+    background-color: #fafafa;
+    font-size: 3rem;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    z-index: 100;
+    display: none;
+}
+
+.next {
+    position: absolute;
+    top: 44%;
+    right: 0;
+    color: #404040;
+    background-color: #fafafa;
+    font-size: 3rem;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 0 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    z-index: 100;
+    display: none;
+}
+
+.dots {
+    position: absolute;
+    bottom: 0;
+}
+
+.faceModal {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.faceModal ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.show {
+    display: block;
+}
