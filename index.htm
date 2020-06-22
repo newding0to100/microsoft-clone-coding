@@ -42,13 +42,74 @@
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="">Microsoft 전체</a></li>
+                    <li><button class="drop-btn"><span>Microsoft 전체</spa></button></li>
                     <li><a href="">검색 <i class="fas fa-search"></i></a></li>
                     <li><a href="">카트 <i class="fas fa-cart-plus"></i></a></li>
                     <li><a href="">로그인 <i class="far fa-user-circle"></i></a></li>
                 </ul>
             </div>
         </div>
+        <ul class="drop-container">
+            <li>
+                <button>소프트웨어</button>
+                <ul>
+                    <li><a href="">Windows 앱</a></li>
+                    <li><a href="">OneDrive</a></li>
+                    <li><a href="">Outlook</a></li>
+                    <li><a href="">Skype</a></li>
+                    <li><a href="">OneNote</a></li>
+                    <li><a href="">Microsoft Teams</a></li>
+                </ul>
+            </li>
+            <li>
+                <button>Xbox 쇼핑</button>
+                <ul>
+                    <li><a href="">Xbox 쇼핑</a></li>
+                    <li><a href="">PCs & tablets</a></li>
+                    <li><a href="">주변기기</a></li>
+                </ul>
+            </li>
+            <li>
+                <button>엔터테인먼트</button>
+                <ul>
+                    <li><a href="">Xbox Game Pass Ultimate</a></li>
+                    <li><a href="">Xbox Live Gold</a></li>
+                    <li><a href="">Xbox 및 게임</a></li>
+                    <li><a href="">PC 게임</a></li>
+                    <li><a href="">Windows 게임</a></li>
+                </ul>
+            </li>
+            <li>
+                <button>기업 고객용</button>
+                <ul>
+                    <li><a href="">Microsoft Azure</a></li>
+                    <li><a href="">Microsoft Dynamics 365</a></li>
+                    <li><a href="">Microsoft 365</a></li>
+                    <li><a href="">Microsoft Industry</a></li>
+                    <li><a href="">데이터 플랫폼</a></li>
+                    <li><a href="">볼륨 라이선싱</a></li>
+                    <li><a href="">비즈니스 쇼핑</a></li>
+                </ul>
+            </li>
+            <li>
+                <button>Developer & IT</button>
+                <ul>
+                    <li><a href="">.NET</a></li>
+                    <li><a href="">Visual Studio</a></li>
+                    <li><a href="">Windows Server</a></li>
+                    <li><a href="">Windows 앱 개발</a></li>
+                    <li><a href="">문서</a></li>
+                </ul>
+            </li>
+            <li>
+                <button>기타</button>
+                <ul>
+                    <li><a href="">무료다운로드 및 보완</a></li>
+                    <li><a href="">교육</a></li>
+                </ul>
+            </li>
+            <li><a href="#">사이트맵 보기</a></li>
+        </ul>
     </nav>
     <section class="main">
         <div class="slideContent chap1">
@@ -60,7 +121,7 @@
                 <p>
                     새로운 Surface Go 2은(는) 태블릿의 다재다능함과 노트북 휴대성을 겸비하고 있어 일상적인 작업과 숙제는 물론, 여가 활동에도 완벽하게 활용할 수 있습니다.
                 </p>
-                <a href="#">지금 쇼핑하기</a>
+                <a href="#">지금 쇼핑하기 &#10095;</a>
             </div>
         </div>
         <div class="slideContent chap2">
@@ -75,23 +136,53 @@
                 <a href="#">자세히 보기&#10095;</a>
             </div>
         </div>
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
+        <button class="prev"><span>&lt;</span></button>
+        <button class="next"><span>&gt;</span></button>
         <div class="dots">
             <button class="dot"></button>
             <button class="dot"></button>
             <button><i class="fas fa-caret-right"></i></button>
         </div>
     </section>
-    <section class="faceModal">
+    <!-- product-icon -->
+    <section class="product-icons">
+        <ul class="product-container">
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4sQDc.png" alt="">
+                    <div>내게 맞는 Microsoft 365 선택하기</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4pndL.webp" alt="">
+                    <div>Surface 디바이스 쇼핑하기</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4pxBu.png" alt="">
+                    <div>Xbox 쇼핑</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4pkvE.png" alt="">
+                    <div>Windows 10 쇼핑하기</div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- faceProduct -->
+    <section class="faceProduct">
         <ul>
             <li>
                 <a href="#">
                     <img src="./microsoft-img/RE4tAa0.webp" alt="">
                     <div class="explain">
-                        <h4>
+                        <h3>
                             Microsoft Teams
-                        </h4>
+                        </h3>
                         <p>채팅하고, 회의하고, 통화하고, 공동 작업하세요.</p>
                     </div>
                 </a>
@@ -100,11 +191,12 @@
                 <a href="#">
                     <img src="./microsoft-img/RE3NOmL.webp" alt="">
                     <div class="explain">
-                        <h4>
+                        <h3>
                             Surface Pro 7
-                        </h4>
+                        </h3>
                         <p>
-                            여러분이 아는 Pro 그 이상입니다. 그 어느 때보다도 강력해진 Surface Pro 7에는 노트북 수준의 Intel® Core™ 프로세서가 탑재되어
+                            여러분이 아는 Pro 그 이상입니다. 그 어느 때보다도 강력해진 Surface Pro 7에는
+                            노트북 수준의 Intel® Core™ 프로세서가 탑재되어
                             있습니다.
                         </p>
                     </div>
@@ -114,9 +206,9 @@
                 <a href="#">
                     <img src="./microsoft-img/RE4vpUK.webp" alt="">
                     <div class="explain">
-                        <h4>
+                        <h3>
                             제품 역사상 가장 강력한 성능의 Surface
-                        </h4>
+                        </h3>
                         <p>
                             새로운 Surface Book 3에서 데스크톱의 성능과 노트북, 태블릿 및 휴대용 스튜디오의 유연함을 경험하세요.
                         </p>
@@ -127,9 +219,9 @@
                 <a href="#">
                     <img src="./microsoft-img/RE4qU1F.webp" alt="">
                     <div class="explain">
-                        <h4>
+                        <h3>
                             Minecraft Dungeons Hero Edition
-                        </h4>
+                        </h3>
                         <p>
                             Minecraft 세계관에 고전 던전 크롤러 스타일로 구현한 액션 어드벤처 신작을 즐겨보세요.
                         </p>
@@ -138,7 +230,168 @@
             </li>
         </ul>
     </section>
+    <section class="ms365-container">
+        <a href="#">
+            <picture>
+                <img src="./microsoft-img/RE4t3sw.webp">
+            </picture>
+            <div class="explain">
+                <h2>비즈니스용 Microsoft 365</h2>
+                <p>
+                    비즈니스용 Microsoft 365는 비즈니스 운영 및 성장에 도움이 되는 강력한 서비스를 제공합니다. </p>
+                <a href="#">최대 6인용 &#10095;</a>
+                <a href="#">1인용 &#10095;</a>
+            </div>
+        </a>
+    </section>
+    <section class="faceProduct">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4rvYV.webp" alt="">
+                    <div class="explain">
+                        <h3>
+                            비즈니스용 Microsoft 365
+                        </h3>
+                        <p>비즈니스용 Microsoft 365는 비즈니스 운영 및 성장에 도움이 되는 강력한 서비스를 제공합니다.</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4vkSt.webp" alt="">
+                    <div class="explain">
+                        <h3>
+                            온라인 교실 만들기
+                        </h3>
+                        <p>
+                            교육자와 학생에게 무료로 제공되는 Microsoft Teams를 사용하여 과제를 만들고 가상으로 공동 작업하는 등 여러 활동을 하는 방법에 대한 전문가의 팁을
+                            확인하세요.
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE4vpUK.webp" alt="">
+                    <div class="explain">
+                        <h3>
+                            오늘날 당면한 과제에 대한 솔루션
+                        </h3>
+                        <p>
+                            저렴하고 실용적인 방법으로 비즈니스를 유지하고 운영하는 방법에 대해 알아보세요.
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./microsoft-img/RE2OfW4.webp" alt="">
+                    <div class="explain">
+                        <h3>
+                            Visual Studio 2019 받기s
+                        </h3>
+                        <p>
+                            생산적이고 현대적이며 혁신적인 IDE인 Visual Studio 2019를 다운로드하세요.
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="ms-sns">
+        <span>Microsoft 팔로우</span>
+        <ul>
+            <li><a href="#">
+                    <img src="./microsoft-img/facebook.png" alt="">
+                </a></li>
+            <li><a href="#"><img src="./microsoft-img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="list">
+                <div>새로운 기능</div>
+                <ul>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Surface Pro X</a></li>
+                    <li><a href="#">Surface Pro 7</a></li>
+                    <li><a href="#">Surface Laptop 3</a></li>
+                    <li><a href="#">Surface Go</a></li>
+                    <li><a href="#">Windows 10 앱(238K)</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <div>Microsoft Store</div>
+                <ul>
+                    <li><a href="#">계정 프로필</a></li>
+                    <li><a href="#">다운로드 센터</a></li>
+                    <li><a href="#">Microsoft Store 지원</a></li>
+                    <li><a href="#">반품/환불</a></li>
+                    <li><a href="#">주문 추적</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <div><a href="#">교육</a></div>
+                <ul>
+                    <li><a href="#">교육 분야의 Microsoft</a></li>
+                    <li><a href="#">학생용 Office</a></li>
+                    <li>학<a href="#">교용 Office 365</a></li>
+                    <li>학<a href="#">생 및 학부모용 특가 혜택</a></li>
+                    <li><a href="#">교육 분야의 Microsoft Azure</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <div>교육</div>
+                <ul>
+                    <li><a href="#">Azure</a></li>
+                    <li><a href="#">AppSource</a></li>
+                    <li><a href="#">자동차</a></li>
+                    <li><a href="#">정부 기관</a></li>
+                    <li><a href="#">의료 서비스</a></li>
+                    <li><a href="#">제조업</a></li>
+                    <li><a href="#">금융 서비</a>스</li>
+                    <li><a href="#">소매</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <div>개발자</div>
+                <ul>
+                    <li><a href="#">Microsoft Visual Studio</a></li>
+                    <li><a href="#">Windows 개발자 센터</a></li>
+                    <li><a href="#">개발자 네트워크</a></li>
+                    <li><a href="#">>TechNet</a></li>
+                    <li><a href="#">Microsoft 개발자 프로그램</a></li>
+                    <li><a href="#">채널 9</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <div>회사</div>
+                <ul>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">Windows 개발자 센터</a></li>
+                    <li><a href="#">Microsoft 정보</a></li>
+                    <li><a href="#">회사 뉴스</a></li>
+                    <li><a href="#">Microsoft 개인 정보 보호</a></li>
+                    <li><a href="#">투자자</a></li>
+                    <li><a href="#">보안</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="#"><i class="fas fa-globe-americas"></i>한국어(대한민국)</a>
+            <ul>
+                <li><a href="#">Microsoft에 문의</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사용약관</a></li>
+                <li><a href="#">상표</a></li>
+                <li><a href="#"> 광고 정보</a></li>
+                <li><a href="#">© Microsoft 2020</a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="main.js"></script>
+    <script src="dropdown.js"></script>
 </body>
 
 </html>

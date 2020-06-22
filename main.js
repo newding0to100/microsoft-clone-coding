@@ -23,25 +23,26 @@ function init() {
         slides[slideIndex - 1].style.display = "block"
     }
     const slides = document.querySelectorAll('.slideContent')
+    
     for (i = 0; i < slides.length; i++) {
         slides[i].addEventListener('mouseover',()=>{
-            prev.classList.add('show')
-            next.classList.add('show')
+            prev.classList.add('active')
+            next.classList.add('active')
         })
 
         prev.addEventListener('mouseover',()=>{
-            prev.classList.add('show')
-            next.classList.add('show')
+            prev.classList.add('active')
+            next.classList.add('active')
         })
 
         next.addEventListener('mouseover',()=>{
-            prev.classList.add('show')
-            next.classList.add('show')
+            prev.classList.add('active')
+            next.classList.add('active')
         })
 
         slides[i].addEventListener('mouseout',()=>{
-            prev.classList.remove('show')
-            next.classList.remove('show')
+            prev.classList.remove('active')
+            next.classList.remove('active')
         })
     }
 }
