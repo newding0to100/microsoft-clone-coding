@@ -54,6 +54,7 @@ header .right a {
 /* nav nav nav nav nav nav nav nav */
 nav {
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-bottom: 1rem;
     padding: 0 12px;
@@ -122,6 +123,7 @@ nav .right li button span:hover {
     display: none;
     font-size: 0.875rem;
     justify-content: flex-start;
+    flex-flow: wrap row;
     position: absolute;
     top: 80%;
     right:15%;
@@ -130,6 +132,7 @@ nav .right li button span:hover {
     height: 393.107px;
     z-index: 5;
     border-bottom: 2px solid black;
+    padding-bottom: 40px;
 }
 
 .drop-container button {
@@ -154,6 +157,46 @@ nav .right li button span:hover {
 .drop-container li ul li a:hover {
     text-decoration: underline;
 }
+
+.drop-container .bottom {
+    width: 1227.778px;
+    text-align: center;
+    height: 44.983px;
+    background-color: #E6E6E6;
+    line-height: 44.983px;
+}
+
+.drop-container .bottom a {
+    display: inline-block;
+    width: 246px;
+}
+
+.drop-container .bottom a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    left: 15%;
+    top: 15%;
+    width: 75%;
+    height: 36px;
+}
+
+
+.search {
+    display: flex;
+}
+
+.search-bar{
+    display: block;
+    width: 75%;
+    height: 36px;
+    border: 1px solid black;
+}
+
 
 /* main & slideshow */
 .main {
@@ -216,8 +259,6 @@ nav .right li button span:hover {
     display: none;
     text-align: center;
 }
-
-
 
 .next {
     right:0;
@@ -304,7 +345,6 @@ nav .right li button span:hover {
 .faceProduct ul li .explain {
     width: 100%;
 }
-
 
 
 /* .faceModal ul li a {
