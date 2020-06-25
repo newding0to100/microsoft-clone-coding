@@ -211,7 +211,26 @@ nav .right li button span:hover {
     margin: 0 auto;
     max-width: 1600px;
     display: none;
+    overflow: hidden;
 }
+
+.main .slideContent picture img {
+    width: 1620px;
+    -webkit-animation: imgMoving 0.35s ease;
+    animation: imgMoving 0.35s ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes imgMoving {
+    0%{transform:translateX(0)}
+    100%{transform:translateX(-20px)}
+}
+
+@-webkit-keyframes imgMoving {
+    0%{transform:translateX(0)}
+    100%{transform:translateX(-20px)}
+} 
 
 .main .slideContent .explain {
     width: 50%;
@@ -222,7 +241,22 @@ nav .right li button span:hover {
     right: 0;
     bottom: 0;
     text-align: left;
+    -webkit-animation: moving 0.35s ease;
+    animation: moving 0.35s ease;
 }
+
+
+
+@keyframes moving {
+    0%{padding-left: 40px;}
+    100%{padding-left: 0px;}
+}
+
+@-webkit-keyframes moving {
+    0%{padding-left: 40px;}
+    100%{padding-left: 0px;}
+}
+
 
 .main .slideContent .explain h1{
     font-size: 2.5rem;
@@ -433,6 +467,7 @@ footer .footer-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 3rem;
 }
 
 footer .footer-container div {

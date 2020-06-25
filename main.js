@@ -23,6 +23,8 @@ function init() {
         slides[slideIndex - 1].style.display = "block"
     }
     const slides = document.querySelectorAll('.slideContent')
+
+    /* Prev, Next button mouseover effect */
     
     for (i = 0; i < slides.length; i++) {
         slides[i].addEventListener('mouseover',()=>{
@@ -41,8 +43,8 @@ function init() {
         })
 
         slides[i].addEventListener('mouseout',()=>{
-            prev.classList.remove('active')
-            next.classList.remove('active')
+            prev.classList.add('active')
+            next.classList.add('active')
         })
     }
 }
