@@ -179,9 +179,9 @@ nav .right li button span:hover {
     display: none;
     position: absolute;
     z-index: 50;
-    left: 15%;
+    left: 25%;
     top: 15%;
-    width: 75%;
+    width: 65%;
     height: 36px;
 }
 
@@ -191,11 +191,31 @@ nav .right li button span:hover {
 }
 
 .search-bar{
+    /* all: unset; */
     display: block;
     width: 75%;
     height: 36px;
     border: 1px solid black;
+    border-right: none;
+
 }
+
+.search-btn2 {
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+
+}
+
+.search-close {
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    color: rgba(0,0,0,.6);
+    border: 1px solid rgba(0,0,0,.6);
+    margin-left: 5px;
+}
+
 
 
 /* main & slideshow */
@@ -219,7 +239,7 @@ nav .right li button span:hover {
     -webkit-animation: imgMoving 0.35s ease;
     animation: imgMoving 0.35s ease;
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    /* -webkit-animation-fill-mode: forwards; */
 }
 
 @keyframes imgMoving {
@@ -272,7 +292,7 @@ nav .right li button span:hover {
     margin-bottom: 1.5rem;
 }
 
-.main .slideContent .explain a {
+.main .slideContent .explain .slideAbtn {
     display: inline-block;
     background: #000000 ;
     color: #fff;
@@ -292,6 +312,8 @@ nav .right li button span:hover {
     border-radius: 50%;
     display: none;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .next {
@@ -532,4 +554,8 @@ footer .bottom ul li:hover {
 
 .flexAct {
     display: flex;
+}
+
+.hidden {
+    display: none;
 }
